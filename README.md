@@ -1,7 +1,8 @@
 <p align="center">TestApp</p>
 
 ## Installation
-git clone https://github.com/hectordolo/TestApp.git 'PROJECT_DIRECTORY'
+<ul>
+<ol>git clone https://github.com/hectordolo/TestApp.git 'PROJECT_DIRECTORY'</ol>
 
 cd 'PROJECT_DIRECTORY'
 composer install
@@ -21,6 +22,7 @@ php artisan config:clear
 php artisan serve
 You can now register a new user to use the application.
 
+</ul>
 ## Files to Check
 
 
