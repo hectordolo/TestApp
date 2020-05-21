@@ -2,29 +2,33 @@
 
 ## Installation
 <ul>
-<ol>git clone https://github.com/hectordolo/TestApp.git 'PROJECT_DIRECTORY'</ol>
+    <li>git clone https://github.com/hectordolo/TestApp.git 'PROJECT_DIRECTORY'</li>
+    <li>cd 'PROJECT_DIRECTORY'</li>
+    <li>composer install</li>
+    <li>php artisan key:generate</li>
+    <li>copy .env.example to .env</li>
+    <li>edit .env</li>
+    <li>set DB_DATABASE="YOUR DATABASE NAME"</li>
+    <li>set DB_USERNAME="YOUR DATABASE USERNAME"</li>
+    <li>set DB_PASSWORD="YOUR DATABASE PASSWORD"</li>
 
-cd 'PROJECT_DIRECTORY'
-composer install
-php artisan key:generate
-copy .env.example to .env
-edit .env
-set DB_DATABASE="YOUR DATABASE NAME"
-set DB_USERNAME="YOUR DATABASE USERNAME"
-set DB_PASSWORD="YOUR DATABASE PASSWORD"
+    <li>set COREAPI_CLIENT_ID="YOUR CLIENT ID"</li>
+    <li>set COREAPI_CLIENT_SECRET="YOUR CLIENT SECRET"</li>
+    <li>set COREAPI_CLIENT_URL="YOUR CORE API URL"</li>
 
-set COREAPI_CLIENT_ID="YOUR CLIENT ID"
-set COREAPI_CLIENT_SECRET="YOUR CLIENT SECRET"
-set COREAPI_CLIENT_URL="YOUR CORE API URL"
+    <li>php artisan migrate</li>
+    <li>php artisan config:clear</li>
+    <li>php artisan serve</li>
+</ul>
 
-php artisan migrate
-php artisan config:clear
-php artisan serve
 You can now register a new user to use the application.
 
-</ul>
-## Files to Check
 
+## Files to Check
+<ul>
+    <li>LoginController->authenticated()</li>
+    <li>ClientController->index()</li>
+</ul>
 
 
 ## License
